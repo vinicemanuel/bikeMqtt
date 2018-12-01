@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A307ED021B32EAD00B0C9CC /* MqttProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A307ECF21B32EAD00B0C9CC /* MqttProvider.swift */; };
 		150F9B7E21B316EF006C33D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F9B7D21B316EF006C33D1 /* AppDelegate.swift */; };
 		150F9B8021B316EF006C33D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F9B7F21B316EF006C33D1 /* ViewController.swift */; };
 		150F9B8321B316EF006C33D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150F9B8121B316EF006C33D1 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		052C923E551B01DF8E6572C6 /* Pods_bikeMqtt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bikeMqtt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A307ECF21B32EAD00B0C9CC /* MqttProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttProvider.swift; sourceTree = "<group>"; };
 		150F9B7A21B316EF006C33D1 /* bikeMqtt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bikeMqtt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		150F9B7D21B316EF006C33D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		150F9B7F21B316EF006C33D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 			children = (
 				150F9B7D21B316EF006C33D1 /* AppDelegate.swift */,
 				150F9B7F21B316EF006C33D1 /* ViewController.swift */,
+				0A307ECF21B32EAD00B0C9CC /* MqttProvider.swift */,
 				150F9B8121B316EF006C33D1 /* Main.storyboard */,
 				150F9B8421B316F0006C33D1 /* Assets.xcassets */,
 				150F9B8621B316F0006C33D1 /* LaunchScreen.storyboard */,
@@ -211,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				150F9B8021B316EF006C33D1 /* ViewController.swift in Sources */,
+				0A307ED021B32EAD00B0C9CC /* MqttProvider.swift in Sources */,
 				150F9B7E21B316EF006C33D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +363,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7J3Y96J464;
+				DEVELOPMENT_TEAM = Y648E928RU;
 				INFOPLIST_FILE = bikeMqtt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,7 +382,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7J3Y96J464;
+				DEVELOPMENT_TEAM = Y648E928RU;
 				INFOPLIST_FILE = bikeMqtt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -1,0 +1,6 @@
+framework module Pods_bikeMqtt {
+  umbrella header "Pods-bikeMqtt-umbrella.h"
+
+  export *
+  module * { export * }
+}
