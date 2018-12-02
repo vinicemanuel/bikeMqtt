@@ -29,6 +29,23 @@ class MqttProvider: CocoaMQTTDelegate {
     
     internal func parseMessage(message: String) {
         //create rotation int from message and send to delegate
+        if let data = message.data(using: .utf8) {
+            do {
+                if let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String : Any] {
+                   
+                    if let rotations = Int(json["count"] as! String) {
+                        print(rotations)
+                        delegate?.receiveRotations(rotations: rotations)
+                    }
+                    
+                }
+                else {
+                    print("error parsing JSON")
+                }
+            } catch {
+                print(error)
+            }
+        }
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didConnectAck ack: CocoaMQTTConnAck) {
