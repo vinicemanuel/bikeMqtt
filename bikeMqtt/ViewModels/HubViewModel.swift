@@ -30,9 +30,9 @@ class HubViewModel: NSObject, HubViewModelProtocol {
         mqttProvider = MqttProvider()
         
         instantRPS = 0
-        wheelSize = wheelRadius * 2 * Double.pi/100
+        wheelSize = wheelRadius * 2 * Double.pi
         
-        targetKilometers = 50
+        targetKilometers = 200
         
         totalRotations = 0
         
