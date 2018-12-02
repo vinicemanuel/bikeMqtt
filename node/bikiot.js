@@ -11,6 +11,9 @@ let rotation = new Gpio(4, 'in', 'falling', {debounceTimeout: 10})
 //let ledRight = new Gpio(23, 'out')
 let led = new Gpio(17, 'out')
 
+let vcc = new Gpio(18, 'out')
+vcc.write(1, function() {})
+
 let counter = 0
 //let makingALeft = false
 //let makingARight = false
@@ -51,10 +54,9 @@ function makeARight(){
 }
 
 rotation.watch((err, value) => {
-  if (err) 
-    throw err
-    
-  counter++
+	if (err) 
+		throw err
+	counter++
 })
 
 usonic.init(function (error) {
