@@ -10,10 +10,14 @@ import Foundation
 
 protocol HubViewModelProtocol {
     
+    var delegate: HubViewModelDelegate? { get set }
+    
+    var targetKilometers: Int { get set }
+    
     var totalRotations: Int { get set }
     var totalDistance: Double { get }
     
-    func speed() -> Int
+    func speed() -> Double
     
     func distanceTillMaintence() -> Int
 }

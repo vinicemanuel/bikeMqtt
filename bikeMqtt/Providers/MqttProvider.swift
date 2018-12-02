@@ -33,9 +33,8 @@ class MqttProvider: CocoaMQTTDelegate {
             do {
                 if let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String : Any] {
                    
-                    if let rotations = Int(json["counter"] as! String) {
-                        print(rotations)
-                        delegate?.receiveRotations(rotations: rotations)
+                    if let rotations = json["counter"] as? NSNumber {
+                        delegate?.receiveRotations(rotations: rotations.intValue)
                     }
                     
                 }

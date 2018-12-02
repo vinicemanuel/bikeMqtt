@@ -10,6 +10,13 @@
 		0A002F6A21B410440043D0E3 /* HubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A002F6921B410440043D0E3 /* HubViewModel.swift */; };
 		0A002F6C21B410700043D0E3 /* HubViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A002F6B21B4106F0043D0E3 /* HubViewModelProtocol.swift */; };
 		0A002F6E21B4131A0043D0E3 /* MqttProviderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A002F6D21B4131A0043D0E3 /* MqttProviderDelegate.swift */; };
+		0A002F7021B453C30043D0E3 /* CardCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A002F6F21B453C30043D0E3 /* CardCVCell.swift */; };
+		0A002F7521B455970043D0E3 /* ShadedRoundCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A002F7421B455970043D0E3 /* ShadedRoundCard.swift */; };
+		0A002F7C21B45CAD0043D0E3 /* UIColor+Babyblue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A002F7921B45CAD0043D0E3 /* UIColor+Babyblue.swift */; };
+		0A002F7D21B45CAD0043D0E3 /* UIColor+Brightsun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A002F7A21B45CAD0043D0E3 /* UIColor+Brightsun.swift */; };
+		0A002F7E21B45CAD0043D0E3 /* UIColor+Codgray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A002F7B21B45CAD0043D0E3 /* UIColor+Codgray.swift */; };
+		0A002F8021B45E190043D0E3 /* VerticalSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A002F7F21B45E190043D0E3 /* VerticalSlider.swift */; };
+		0A002F8221B46C320043D0E3 /* HubViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A002F8121B46C320043D0E3 /* HubViewModelDelegate.swift */; };
 		0A307ED021B32EAD00B0C9CC /* MqttProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A307ECF21B32EAD00B0C9CC /* MqttProvider.swift */; };
 		150F9B7E21B316EF006C33D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F9B7D21B316EF006C33D1 /* AppDelegate.swift */; };
 		150F9B8021B316EF006C33D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150F9B7F21B316EF006C33D1 /* ViewController.swift */; };
@@ -24,6 +31,13 @@
 		0A002F6921B410440043D0E3 /* HubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubViewModel.swift; sourceTree = "<group>"; };
 		0A002F6B21B4106F0043D0E3 /* HubViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubViewModelProtocol.swift; sourceTree = "<group>"; };
 		0A002F6D21B4131A0043D0E3 /* MqttProviderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttProviderDelegate.swift; sourceTree = "<group>"; };
+		0A002F6F21B453C30043D0E3 /* CardCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCVCell.swift; sourceTree = "<group>"; };
+		0A002F7421B455970043D0E3 /* ShadedRoundCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadedRoundCard.swift; sourceTree = "<group>"; };
+		0A002F7921B45CAD0043D0E3 /* UIColor+Babyblue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Babyblue.swift"; sourceTree = "<group>"; };
+		0A002F7A21B45CAD0043D0E3 /* UIColor+Brightsun.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Brightsun.swift"; sourceTree = "<group>"; };
+		0A002F7B21B45CAD0043D0E3 /* UIColor+Codgray.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Codgray.swift"; sourceTree = "<group>"; };
+		0A002F7F21B45E190043D0E3 /* VerticalSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalSlider.swift; sourceTree = "<group>"; };
+		0A002F8121B46C320043D0E3 /* HubViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubViewModelDelegate.swift; sourceTree = "<group>"; };
 		0A307ECF21B32EAD00B0C9CC /* MqttProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MqttProvider.swift; sourceTree = "<group>"; };
 		150F9B7A21B316EF006C33D1 /* bikeMqtt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bikeMqtt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		150F9B7D21B316EF006C33D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,6 +62,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A002F7121B453E90043D0E3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				150F9B8121B316EF006C33D1 /* Main.storyboard */,
+				150F9B7F21B316EF006C33D1 /* ViewController.swift */,
+				0A002F6F21B453C30043D0E3 /* CardCVCell.swift */,
+				0A002F7421B455970043D0E3 /* ShadedRoundCard.swift */,
+				0A002F7F21B45E190043D0E3 /* VerticalSlider.swift */,
+				0A002F7821B45C9F0043D0E3 /* Colours */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0A002F7221B453F20043D0E3 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				0A307ECF21B32EAD00B0C9CC /* MqttProvider.swift */,
+				0A002F6D21B4131A0043D0E3 /* MqttProviderDelegate.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		0A002F7321B453FC0043D0E3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				0A002F6921B410440043D0E3 /* HubViewModel.swift */,
+				0A002F6B21B4106F0043D0E3 /* HubViewModelProtocol.swift */,
+				0A002F8121B46C320043D0E3 /* HubViewModelDelegate.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0A002F7821B45C9F0043D0E3 /* Colours */ = {
+			isa = PBXGroup;
+			children = (
+				0A002F7921B45CAD0043D0E3 /* UIColor+Babyblue.swift */,
+				0A002F7A21B45CAD0043D0E3 /* UIColor+Brightsun.swift */,
+				0A002F7B21B45CAD0043D0E3 /* UIColor+Codgray.swift */,
+			);
+			path = Colours;
+			sourceTree = "<group>";
+		};
 		150F9B7121B316EF006C33D1 = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				150F9B7D21B316EF006C33D1 /* AppDelegate.swift */,
-				150F9B7F21B316EF006C33D1 /* ViewController.swift */,
-				0A002F6921B410440043D0E3 /* HubViewModel.swift */,
-				0A002F6B21B4106F0043D0E3 /* HubViewModelProtocol.swift */,
-				0A307ECF21B32EAD00B0C9CC /* MqttProvider.swift */,
-				0A002F6D21B4131A0043D0E3 /* MqttProviderDelegate.swift */,
-				150F9B8121B316EF006C33D1 /* Main.storyboard */,
+				0A002F7121B453E90043D0E3 /* Views */,
+				0A002F7321B453FC0043D0E3 /* ViewModels */,
+				0A002F7221B453F20043D0E3 /* Providers */,
 				150F9B8421B316F0006C33D1 /* Assets.xcassets */,
 				150F9B8621B316F0006C33D1 /* LaunchScreen.storyboard */,
 				150F9B8921B316F0006C33D1 /* Info.plist */,
@@ -223,10 +276,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A002F6C21B410700043D0E3 /* HubViewModelProtocol.swift in Sources */,
+				0A002F7E21B45CAD0043D0E3 /* UIColor+Codgray.swift in Sources */,
 				0A002F6A21B410440043D0E3 /* HubViewModel.swift in Sources */,
+				0A002F8221B46C320043D0E3 /* HubViewModelDelegate.swift in Sources */,
+				0A002F7C21B45CAD0043D0E3 /* UIColor+Babyblue.swift in Sources */,
+				0A002F7021B453C30043D0E3 /* CardCVCell.swift in Sources */,
+				0A002F7521B455970043D0E3 /* ShadedRoundCard.swift in Sources */,
 				150F9B8021B316EF006C33D1 /* ViewController.swift in Sources */,
 				0A002F6E21B4131A0043D0E3 /* MqttProviderDelegate.swift in Sources */,
+				0A002F8021B45E190043D0E3 /* VerticalSlider.swift in Sources */,
 				0A307ED021B32EAD00B0C9CC /* MqttProvider.swift in Sources */,
+				0A002F7D21B45CAD0043D0E3 /* UIColor+Brightsun.swift in Sources */,
 				150F9B7E21B316EF006C33D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
