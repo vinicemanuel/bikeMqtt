@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CocoaMQTT
 
 class ViewController: UIViewController {
     
