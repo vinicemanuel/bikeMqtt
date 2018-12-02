@@ -19,10 +19,16 @@ class MqttProvider: CocoaMQTTDelegate {
     fileprivate let clientID = "clienteiOSApp"
     fileprivate let port = 1883
     
+    var delegate: MqttProviderDelegate?
+    
     init() {
         self.mqtt = CocoaMQTT(clientID: clientID, host: host, port: UInt16(port))
         self.mqtt?.delegate = self
         self.mqtt?.connect()
+    }
+    
+    internal func parseMessage(message: String) {
+        //create rotation int from message and send to delegate
     }
     
     func mqtt(_ mqtt: CocoaMQTT, didConnectAck ack: CocoaMQTTConnAck) {
@@ -36,7 +42,7 @@ class MqttProvider: CocoaMQTTDelegate {
     
     func mqtt(_ mqtt: CocoaMQTT, didReceiveMessage message: CocoaMQTTMessage, id: UInt16) {
         if let message = message.string {
-            print(message)
+            self.parseMessage(message: message)
         }
     }
     

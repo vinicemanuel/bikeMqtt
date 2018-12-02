@@ -11,9 +11,11 @@ import CocoaMQTT
 
 class ViewController: UIViewController {
     
-    var mqttProvider = MqttProvider()
+    var viewModel: HubViewModelProtocol!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        viewModel = HubViewModel(wheelRadius: 0.345)
     }
 }
